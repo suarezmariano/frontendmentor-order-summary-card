@@ -1,0 +1,59 @@
+:root {
+
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Red Hat Display", sans-serif;
+    background-color: var(--pale-blue);
+    display: flex;
+    min-height: 100vh;
+    padding: 40px 0;
+
+}
+
+.card {
+    margin: auto;
+    background-color: white;
+    width: 340px;
+    border-radius: 2em;
+    overflow: hidden;
+}
+
+.card::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 180px;
+    background-image: url("../images/illustration-hero.svg");
+    background-size: cover;
+    background-position: center;
+}
+
+.card_texts {
+    padding: 2.5em 1.7em;
+    text-align: center;
+}
+
+.card_title {
+    font-size: 1.7rem;
+    color: var(--dark-blue);
+    margin: 1.2em 0 1.5em;
+
+}
+
+.card_plan {
+    display: flex;
+    background-color: var(--very-pale-blue);
+
+}

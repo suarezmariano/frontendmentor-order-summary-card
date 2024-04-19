@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="./css/styless.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Order summary card</title>
 
 
@@ -17,19 +17,34 @@
 
 <body>
 
-  <!--  Order Summary
 
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
+  <section class="card">
 
-  Annual Plan
-  $59.99/year
+    <div class="card_texts">
 
-  Change
+      <h2 class="card_title">Order Summary</h2>
+      <p class="card_paragraph">You can now listen to millions of songs, audiobooks, and podcasts on any
+        device anywhere you like!</p>
 
-  Proceed to Payment
-  Cancel Order -->
+      <article class="card_plan">
+        <img src="./images/icon-music.svg" class="card_icon" alt="">
 
-  <div </body>
+        <div class="card_info">
+          <h2 class="card_name">Annual Plan</h2>
+          <p class="card_price">$59.99/year</p>
+        </div>
+
+        <a href="#" class="card_price">Change</a>
+
+      </article>
+
+      <a href="#" class="card_cta">Proceed to Payment</a>
+      <a href="#" class="card_cta card_cta--gray">Cancel Order</a>
+    </div>
+
+  </section>
+
+
+</body>
 
 </html>
